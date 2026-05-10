@@ -104,7 +104,7 @@ header .navbar{
 .navbar .nav-menu .nav-link{
     padding: 10px 18px;
     color: var(--white-color);
-     background: var(--white-color); 
+     /* background: var(--white-color);  */
     border-radius: var(--border-radius-m);
     font-size: var(--font-size-m);
     transition: 0.3s ease;
@@ -116,7 +116,7 @@ header .navbar{
     
 }
 
-.navbar :where(#menu-close-button, #menu-open-button){
+.navbar:where(#menu-close-button, #menu-open-button){
     display: none;
 
 }
@@ -207,6 +207,10 @@ header .navbar{
 
 .about-section .about-details .section-title{
     padding: 0;
+}
+
+.about-section .about-details{
+    max-width: 50%;
 }
 
 .about-section .about-details .text{
@@ -302,7 +306,7 @@ header .navbar{
         justify-content: center;
     }
 
-    .hero-section .hero-details :is(.subtitle, .description){
+    .hero-section .hero-details :is(.subtitle, .description), .about-section .about-details{
         max-width: 100%;
     }
 
@@ -314,6 +318,19 @@ header .navbar{
         max-width: 270px;
         margin-right: 0;
     }
+
+    .about-section .section-content{
+        flex-direction: column-reverse;
+        gap: 70px;
+    }
+
+    .about-section .about-image-wrapper .about-image{
+        width: 100%;
+        height: 100%;
+        max-width: 250px;
+        aspect-ratio: 1;
+    }
+
 }
 
 
