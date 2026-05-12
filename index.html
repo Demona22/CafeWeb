@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 
-<html lang = "en">
+<html lang = "vi">
     <!-- Phần đầu trang -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Web</title>
+    <!-- Link Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- Link Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <!-- Phần thân trang -->
@@ -20,22 +23,22 @@
         <ul class="nav-menu">
             <button id="menu-close-button" class="fas fa-times"></button>
             <li class="nav-item">
-                <a href="#" class="nav-link">Home</a>
+                <a href="#home-section" class="nav-link">Trang Chủ</a>
             </li>
              <li class="nav-item">
-                <a href="#" class="nav-link">About</a>
+                <a href="#about-section" class="nav-link">Giới Thiệu</a>
             </li>
              <li class="nav-item">
-                <a href="#" class="nav-link">Menu</a>
+                <a href="#menu-section" class="nav-link">Thực Đơn</a>
             </li>
              <li class="nav-item">
-                <a href="#" class="nav-link">Testimonials</a>
+                <a href="#testimonials-section" class="nav-link">Đánh giá</a>
             </li>
              <li class="nav-item">
-                <a href="#" class="nav-link">Gallery</a>
+                <a href="#gallery-section" class="nav-link">Thư Viện</a>
             </li>
              <li class="nav-item">
-                <a href="#" class="nav-link">Contact</a>
+                <a href="#contact-section" class="nav-link">Liên Hệ</a>
             </li>
         </ul>
 
@@ -46,12 +49,12 @@
 
         <main>
             <!-- Hero section -->
-            <section class="hero-section">
+            <section id="home-section" class="hero-section">
                 <div class="section-content">
                     <div class="hero-details">
                         <h2 class="title">Best Coffee</h2>
-                        <h3 class="subtitle">Experience the perfect blend of flavor and aroma</h3>
-                        <p class="description">Welcome to our coffee shop, where every cup tells a story.</p>
+                        <h3 class="subtitle">Trải nghiệm sự kết hợp hoàn hảo giữa hương vị và mùi thơm.</h3>
+                        <p class="description">Chào mừng đến với quán cà phê của chúng tôi, nơi mỗi tách cà phê đều là một câu chuyện.</p>
 
                         <div class="buttons">
                             <a href="#" class="button order-now">Order Now</a>
@@ -65,7 +68,7 @@
             </section>
 
             <!-- About Section -->
-             <section class="about-section">
+             <section id="about-section" class="about-section">
                 <div class="section-content">
                     <div class="about-image-wrapper">
                         <img src="images/about-image.jpg" alt="About" class="about-image">
@@ -83,9 +86,8 @@
                 </div>
             </section>
 
-
             <!-- Menu Section -->
-             <section class="menu-section">
+             <section id="menu-section" class="menu-section">
                 <h2 class="section-title">Menu</h2>
                 <div class="section-content">
                     <ul class="menu-list">
@@ -122,8 +124,151 @@
                     </ul>
                 </div>
              </section>
+
+             <!-- Testimonials Section -->
+             <section id="testimonials-section" class="testimonials-section">
+                <h2 class="section-title">Đánh giá từ khách hàng</h2>
+                <div class="section-content">
+                    <div class="slider-container swiper">
+                        <div class="slider-wrapper">
+                            <ul class="testimonials-list swiper-wrapper">
+                                <li class="testimonial swiper-slide">
+                                    <img src="images/kh-1.png" alt="Khách Hàng" class="user-image">
+                                    <h3 class="name">Linh Nguyễn</h3>
+                                    <i class="feedback">"Dịch vụ tuyệt vời và cà phê ngon miệng!"</i>
+                                </li>
+                                <li class="testimonial swiper-slide">
+                                    <img src="images/kh-2.png" alt="Khách Hàng" class="user-image">
+                                    <h3 class="name">Bảo Long</h3>
+                                    <i class="feedback">"Không gian tuyệt vời, cà phê đậm vị và phục vụ rất thân thiện"</i>
+                                </li>
+                                <li class="testimonial swiper-slide">
+                                    <img src="images/kh-3.png" alt="Khách Hàng" class="user-image">
+                                    <h3 class="name">Vĩnh Nguyên</h3>
+                                    <i class="feedback">“Một nơi tuyệt vời để thư giãn và làm việc mỗi ngày.”</i>
+                                </li>
+                                <li class="testimonial swiper-slide">
+                                    <img src="images/kh-4.jpg" alt="Khách Hàng" class="user-image">
+                                    <h3 class="name">Minh Huy</h3>
+                                    <i class="feedback">“Không gian yên tĩnh, phù hợp để học tập và gặp gỡ bạn bè.”</i>
+                                </li>
+                                <li class="testimonial swiper-slide">
+                                    <img src="images/kh-5.png" alt="Khách Hàng" class="user-image">
+                                    <h3 class="name">James Milner</h3>
+                                    <i class="feedback">“A truly charming café, exquisite coffee and a wonderfully relaxing atmosphere.”</i>
+                                    <i class="feedback">“Một quán cà phê thật sự đầy cuốn hút, cà phê tuyệt hảo và bầu không khí thư giãn tuyệt vời.”</i>
+                                </li>
+                            </ul>
+
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-slide-button swiper-button-prev"></div>
+                            <div class="swiper-slide-button swiper-button-next"></div>
+
+                        </div>
+
+                    </div>
+                </div>
+             </section>
+             <!-- Gallery Section -->
+              <section id="gallery-section" class="gallery-section">
+                <h2 class="section-title">Bộ Sưu Tập</h2>
+                <ul class="gallery-list">
+                    <li class="gallery-item">
+                      <img src="images/bst-1.png" alt="Bộ Sưu Tập" class="gallery-image">  
+                    </li>
+                    <li class="gallery-item">
+                      <img src="images/bst-8.jpg" alt="Bộ Sưu Tập" class="gallery-image">  
+                    </li>
+                    <li class="gallery-item">
+                      <img src="images/bst-3.png" alt="Bộ Sưu Tập" class="gallery-image">  
+                    </li>
+                    <li class="gallery-item">
+                      <img src="images/bst-7.jpg" alt="Bộ Sưu Tập" class="gallery-image">  
+                    </li>
+                    <li class="gallery-item">
+                      <img src="images/bst-5.jpg" alt="Bộ Sưu Tập" class="gallery-image">  
+                    </li>
+                    <li class="gallery-item">
+                      <img src="images/bst-6.jpg" alt="Bộ Sưu Tập" class="gallery-image">  
+                    </li>
+                    <!-- <li class="gallery-item">
+                      <img src="images/gallery-1.jpg" alt="Bộ Sưu Tập" class="gallery-image">  
+                    </li>
+                    <li class="gallery-item">
+                      <img src="images/anhcaphe.jpg" alt="Bộ Sưu Tập" class="gallery-image">  
+                    </li> -->
+                </ul>
+              </section>
+
+              <!-- Contact Section -->
+               <section id="contact-section" class="contact-section">
+                <h2 class="section-title">Liên Hệ</h2>
+                <div class="section-content">
+                    <ul class="contact-info-list">
+                        <li class="contact-info">
+                            <i class="fa-solid fa-location-crosshairs">
+                            </i>
+                            <p>S10.05 Vinhomes Grand Park , Thủ Đức , Hồ Chí Minh</p>
+                        </li>
+                         <li class="contact-info">
+                            <i class="fa-regular fa-envelope">
+                            </i>
+                            <p>info@cafe.com</p>
+                        </li>
+                         <li class="contact-info">
+                            <i class="fa-solid fa-phone">                            
+                            </i>
+                            <p>+84 123 456 789</p>
+                        </li>
+                         <li class="contact-info">
+                            <i class="fa-regular fa-clock">                               
+                            </i>
+                            <p>Thursday - Saturday: 9:00 AM - 10:00 PM</p>
+                        </li>
+                         <li class="contact-info">
+                            <i class="fa-regular fa-clock">                               
+                            </i>
+                            <p>Monday,Sunday: Đóng Cửa</p>
+                        </li>
+                         <li class="contact-info">
+                            <i class="fa-solid fa-globe">                               
+                            </i>
+                             <p>www.cafe.com</p>
+                        </li>
+                    </ul>
+
+                    <form action="#" class="contact-form">
+                        <input type="text" placeholder="Tên của bạn" class="form-input" required>
+                        <input type="email" placeholder="Email của bạn" class="form-input" required>
+                        <textarea placeholder="Lời nhắn" class="form-input" required></textarea>
+                        <button class="submit-button">Gửi</button>
+                    </form>
+                </div>
+               </section>
+               <!-- Footer Section -->
+                <footer class="footer-section">
+                    <div class="section-content">
+                        <p class="copyright-text">© 2024 Cafe.</p>
+
+                       <div class="social-link-list">
+                            <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                        </div>
+
+                        <p class="policy-text">
+                            <a href="#" class="policy-link">Privacy Policy</a> 
+                            <span class="separator">.</span>
+                            <a href="#" class="policy-link">Refund Policy</a>
+                        </p>
+                    </div>
+                </footer>
         </main>
 
+        <!-- Link Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+        <!-- Link Custom JS -->
         <script src="script.js"></script>
 </body>
 </html>
