@@ -116,7 +116,7 @@ header .navbar{
     
 }
 
-.navbar:where(#menu-close-button, #menu-open-button){
+.navbar :where(#menu-close-button, #menu-open-button){
     display: none;
 
 }
@@ -236,6 +236,58 @@ header .navbar{
     color: var(--secondary-color);
 }
 
+/* Menu Section */
+
+.menu-section{
+    color: var(--white-color);
+    background: var(--dark-color);
+    padding: 50px 0 100px;
+}
+
+.menu-section .menu-list{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 110px;
+   align-items: center ;
+   justify-content: space-between;
+}
+
+.menu-section .menu-list .menu-item{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    width: calc(100% / 3 - 110px);
+}
+
+.menu-section .menu-list .menu-item .menu-image{
+    max-width: 83%;
+    aspect-ratio: 1;
+    margin-bottom: 15px;
+    object-fit: contain;
+}
+
+.menu-section .menu-list .menu-item .name{
+    margin: 12px 0;
+    font-size: var(--font-size-l);
+    font-weight: var(--font-weight-semibold);
+}
+
+.menu-section .menu-list .menu-item .text{
+    font-size: var(--font-size-m);
+}
+
+@media screen and (max-width:1024px){
+    .menu-section .menu-list{
+        gap: 60px;
+    }
+
+    .menu-section .menu-list .menu-item {
+        width: calc(100% / 3 - 60px);
+   }
+}
+
 @media screen and (max-width:900px){
     :root {
         --font-size-m:1rem; 
@@ -317,6 +369,7 @@ header .navbar{
     .hero-section .hero-image-wrapper{
         max-width: 270px;
         margin-right: 0;
+
     }
 
     .about-section .section-content{
@@ -331,6 +384,27 @@ header .navbar{
         aspect-ratio: 1;
     }
 
+    .menu-section .menu-list{
+        gap: 30px;
+    }
+
+    .menu-section .menu-list .menu-item {
+        width: calc(100% / 2 - 30px);
+   }
+
+     .menu-section .menu-list .menu-item .menu-image{
+        max-width: 200px;
+     }
+}
+
+@media screen and (max-width: 640px) {
+     .menu-section .menu-list{
+        gap: 60px;
+    }
+
+    .menu-section .menu-list .menu-item {
+        width: 100%;
+   }
 }
 
 
